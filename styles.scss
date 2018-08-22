@@ -1,0 +1,86 @@
+$font-stack: 'Open Sans', sans-serif;
+$darkest-purple: #2f2235;
+$dark-purple: #3f3244;
+$white: #f2f2f2;
+$teal: #34d1d1;
+$light-grey: #d1d2d3;
+$grey: #666666;
+
+* {
+  font-family: $font-stack;
+}
+
+header {
+  background-color: $dark-purple;
+  margin: 0;
+  height: 5vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+h2 {
+  margin: 0 1em;
+  font-weight: 100;
+  color: $white;
+}
+
+h5 {
+  font-weight: 300;
+  color: $white;
+  margin: 0 1em;
+}
+
+.header-colored-text {
+  color: $teal;
+  padding-left: 0.5rem;
+}
+
+
+
+.accordion {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.accordion-container .tab {
+  // order: 99; // Put the accordion-container last
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+}
+
+.accordion-container input[type="radio"] {
+  display: none;
+}
+
+.accordion-container input[type="radio"]:checked + label {
+	background: #fff;
+}
+
+.accordion-container input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+
+// .accordion-items {
+//   padding: 1rem;
+//   background-color: $light-grey;
+// }
+
+// .accordion-items:active {
+//   border: 1px solid;
+//   background-color: $white;
+// }
+
+// a {
+//   text-decoration: none;
+// }
+
+// .tab-content {
+//   display: none;
+// }

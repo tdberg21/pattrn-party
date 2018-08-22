@@ -1,10 +1,9 @@
-
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
-  background-color: #2F2235;
+  background-color: #3f3244;
   margin: 0;
   height: 5vh;
   display: flex;
@@ -16,17 +15,17 @@ header {
 h2 {
   margin: 0 1em;
   font-weight: 100;
-  color: #F2F2F2;
+  color: #f2f2f2;
 }
 
 h5 {
   font-weight: 300;
-  color: #F2F2F2;
+  color: #f2f2f2;
   margin: 0 1em;
 }
 
 .header-colored-text {
-  color: #34D1D1;
+  color: #34d1d1;
   padding-left: 0.5rem;
 }
 
@@ -37,18 +36,23 @@ h5 {
   width: 100%;
 }
 
-.accordion-items {
+.accordion-container .tab {
+  flex-grow: 1;
+  width: 100%;
+  display: none;
   padding: 1rem;
 }
 
-.accordion-items:active {
-  border: 1px solid;
-}
-
-a {
-  text-decoration: none;
-}
-
-.tab-content {
+.accordion-container input[type=radio] {
   display: none;
 }
+
+.accordion-container input[type=radio]:checked + label {
+  background: #fff;
+}
+
+.accordion-container input[type=radio]:checked + label + .tab {
+  display: block;
+}
+
+/*# sourceMappingURL=styles.css.map */
