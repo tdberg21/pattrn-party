@@ -1,3 +1,54 @@
+
 * {
-  background-color: magenta;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: #2F2235;
+  margin: 0;
+  height: 5vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+h2 {
+  margin: 0 1em;
+  font-weight: 100;
+  color: #F2F2F2;
+}
+
+h5 {
+  font-weight: 300;
+  color: #F2F2F2;
+  margin: 0 1em;
+}
+
+.header-colored-text {
+  color: #34D1D1;
+  padding-left: 0.5rem;
+}
+
+.accordion {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.accordion-items {
+  padding: 1rem;
+}
+
+.accordion-items:active {
+  border: 1px solid;
+}
+
+a {
+  text-decoration: none;
+}
+
+.tab-content {
+  display: none;
 }
