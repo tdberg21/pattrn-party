@@ -1,3 +1,83 @@
 * {
-  background-color: magenta;
+  font-family: "Open Sans", sans-serif;
 }
+
+header {
+  background-color: #3f3244;
+  margin: 0;
+  height: 5vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+h2 {
+  margin: 0 1em;
+  font-weight: 100;
+  color: #f2f2f2;
+}
+
+h5 {
+  font-weight: 300;
+  color: #f2f2f2;
+  margin: 0 1em;
+}
+
+.header-colored-text {
+  color: #34d1d1;
+  padding-left: 0.5rem;
+}
+
+.accordion-container {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 10% auto;
+}
+
+.accordion-container label {
+  order: 1;
+  display: block;
+  width: 21%;
+  text-align: center;
+}
+
+.accordion-container .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  border-left: 1px solid #d1d2d3;
+  border-bottom: 1px solid #d1d2d3;
+  border-right: 1px solid #d1d2d3;
+}
+
+.accordion-container input[type=radio] {
+  position: absolute;
+  display: none;
+}
+
+.accordion-container input[type=radio]:checked + label {
+  background: #fff;
+  border-left: 1px solid #d1d2d3;
+  border-top: 1px solid #d1d2d3;
+  border-right: 1px solid #d1d2d3;
+  border-bottom: none;
+}
+
+.accordion-container input[type=radio] + label {
+  background: #f2f2f2;
+  border-bottom: 1px solid #d1d2d3;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+.accordion-container input[type=radio]:checked + label + .tab {
+  display: flex;
+}
+
+/*# sourceMappingURL=styles.css.map */
