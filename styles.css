@@ -29,30 +29,55 @@ h5 {
   padding-left: 0.5rem;
 }
 
-.accordion {
+.accordion-container {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 10% auto;
+}
+
+.accordion-container label {
+  order: 1;
+  display: block;
+  width: 21%;
+  text-align: center;
 }
 
 .accordion-container .tab {
+  order: 99;
   flex-grow: 1;
   width: 100%;
   display: none;
   padding: 1rem;
+  border-left: 1px solid #d1d2d3;
+  border-bottom: 1px solid #d1d2d3;
+  border-right: 1px solid #d1d2d3;
 }
 
 .accordion-container input[type=radio] {
+  position: absolute;
   display: none;
 }
 
 .accordion-container input[type=radio]:checked + label {
   background: #fff;
+  border-left: 1px solid #d1d2d3;
+  border-top: 1px solid #d1d2d3;
+  border-right: 1px solid #d1d2d3;
+  border-bottom: none;
+}
+
+.accordion-container input[type=radio] + label {
+  background: #f2f2f2;
+  border-bottom: 1px solid #d1d2d3;
+  font-size: 0.8rem;
+  padding: 10px;
 }
 
 .accordion-container input[type=radio]:checked + label + .tab {
-  display: block;
+  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */
