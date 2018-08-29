@@ -10,6 +10,16 @@ $grey: #666666;
   font-family: $font-stack;
 }
 
+body {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $light-grey;
+}
+
 header {
   background-color: $dark-purple;
   margin: 0;
@@ -37,20 +47,37 @@ h5 {
   padding-left: 0.5rem;
 }
 
+.section-header-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.section-header {
+  font-weight: 300;
+  font-size: 0.9em;
+  margin: 1.5rem;
+}
+.section-header-hr {
+  width: 75vw;
+  height: 1px;
+  margin: 0;
+}
+
 .accordion-container {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   width: 90%;
-  margin: 10% auto;
+  margin: 1% auto;
 }
 
 .accordion-container label {
   order: 1;
   display: block;
-  width: 21%;
+  width: 22%;
   text-align: center;
+  margin-right: 2px;
 }
 
 .accordion-container .tab {
@@ -59,9 +86,7 @@ h5 {
 	width: 100%;
 	display: none;
   padding: 1rem;
-  border-left: 1px solid $light-grey;
-  border-bottom: 1px solid $light-grey;
-  border-right: 1px solid $light-grey;
+  border: 1px solid $light-grey;
 }
 
 .accordion-container input[type="radio"] {
@@ -75,33 +100,48 @@ h5 {
   border-top: 1px solid $light-grey;
   border-right: 1px solid $light-grey;
   border-bottom: none;
+  font-weight: 600;
 }
 
 .accordion-container input[type="radio"] + label {
   background: $white;
-  border-bottom: 1px solid $light-grey;
   font-size: 0.8rem;
+  font-weight: 100;
   padding: 10px;
 }
 
 .accordion-container input[type="radio"]:checked + label + .tab {
-	display: flex;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 100;
+  font-size: 0.8rem;
 }
 
-// .accordion-items {
-//   padding: 1rem;
-//   background-color: $light-grey;
-// }
+.tab-text-section {
+  width: 65%;
+}
 
-// .accordion-items:active {
-//   border: 1px solid;
-//   background-color: $white;
-// }
+.tab-header {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
 
-// a {
-//   text-decoration: none;
-// }
+.accordion-code-container {
+  display: flex;
+  justify-content: center;
+}
 
-// .tab-content {
-//   display: none;
-// }
+.view-code-button {
+  margin: 3em auto;
+  background-color: $dark-purple;
+  color: $white;
+  font-weight: 300;
+  height: 40px;
+  line-height: 40px;
+  width: 25%;
+  text-align: center;
+  // vertical-align: middle;
+  text-decoration: none;
+}
+
+
