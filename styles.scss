@@ -36,8 +36,7 @@ h2 {
   color: $white;
 }
 
-h5 {
-  font-weight: 300;
+.username {
   color: $white;
   margin: 0 1em;
 }
@@ -75,9 +74,10 @@ h5 {
 .accordion-container label {
   order: 1;
   display: block;
-  width: 22%;
+  // width: 22%;
   text-align: center;
   margin-right: 2px;
+  flex-grow: 1;
 }
 
 .accordion-container .tab {
@@ -140,8 +140,44 @@ h5 {
   line-height: 40px;
   width: 25%;
   text-align: center;
-  // vertical-align: middle;
   text-decoration: none;
 }
 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.card-header {
+  border: 1px solid $light-grey;
+  margin: 0;
+  width: fit-content;
+}
+
+.card1 {
+  flex-grow: 5;
+  width: fit-content;
+}
+
+.card1-img {
+  width: 60%;
+}
+
+.card2 {
+  flex-grow: 1;
+}
+
+.card3 {
+  flex-grow: 1;
+}
+
+.card4 {
+  flex-grow: 1;
+}
+
+.card5 {
+  flex-grow: 1;
+}
 
