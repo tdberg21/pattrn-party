@@ -74,7 +74,6 @@ h2 {
 .accordion-container label {
   order: 1;
   display: block;
-  // width: 22%;
   text-align: center;
   margin-right: 2px;
   flex-grow: 1;
@@ -86,7 +85,9 @@ h2 {
 	width: 100%;
 	display: none;
   padding: 1rem;
-  border: 1px solid $light-grey;
+  border-left: 1px solid $light-grey;
+  border-right: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
 }
 
 .accordion-container input[type="radio"] {
@@ -104,6 +105,7 @@ h2 {
 
 .accordion-container input[type="radio"] + label {
   background-color: $white;
+  border-bottom: 1px solid $light-grey;
   font-size: 0.8rem;
   padding: 10px;
 }
@@ -221,6 +223,10 @@ h2 {
   font-weight: 300;
 }
 
+.header-hamburger-button {
+  display: none;
+}
+
 .circle-image-holder {
   border-radius: 50%;
   height: 50px;
@@ -240,5 +246,76 @@ h2 {
   background-size: 15px 15px;
   font-size: 0.8rem;
   font-weight: 300;
+}
+
+@media screen and (max-width: 1020px) {
+  .section-header-hr {
+    width: 40%;
+  }
+
+  .tab-text-section {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .header-bar-nav-links, .search-bar {
+    display: none;
+  }
+
+  .header-hamburger-button {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $grey;
+  }
+
+  .tab-text-section {
+    width: 60%;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  .tab {
+    border-top: 1px solid $light-grey;
+    flex-wrap: wrap;
+  }
+
+  .tab-images {
+    width: 100%;
+  }
+
+  .tab-text-section {
+    width: 100%;
+  }
+
+  .accordion-container .tab,
+  .accordion-container label {
+    order: initial;
+    margin: 0;
+  }
+
+  .accordion-container label {
+    width: 100%;
+    margin-right: 0;
+    border-bottom: 0px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex-grow: 1;
+    width: 50%;
+  }
+
+  .section-header-hr {
+    width: 30%;
+  }
+
 }
 
