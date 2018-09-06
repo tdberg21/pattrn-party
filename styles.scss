@@ -85,9 +85,8 @@ h2 {
 	width: 100%;
 	display: none;
   padding: 1rem;
-  border-left: 1px solid $light-grey;
-  border-right: 1px solid $light-grey;
-  border-bottom: 1px solid $light-grey;
+  border: 1px solid $light-grey;
+  z-index: 0;
 }
 
 .accordion-container input[type="radio"] {
@@ -100,14 +99,16 @@ h2 {
   border-top: 1px solid $light-grey;
   border-right: 1px solid $light-grey;
   border-bottom: 0;
+  margin-bottom: -1px;
+  z-index: +1;
   font-weight: 600;
 }
 
 .accordion-container input[type="radio"] + label {
   background-color: $white;
-  border-bottom: 1px solid $light-grey;
   font-size: 0.8rem;
   padding: 10px;
+
 }
 
 .accordion-container input[type="radio"]:checked + label + .tab {
