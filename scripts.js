@@ -1,0 +1,1 @@
+$('.header-hamburger-button').click(() => { $('.display-toggle').slideToggle('slow')})

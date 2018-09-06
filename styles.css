@@ -205,7 +205,7 @@ h2 {
   align-items: center;
   height: 90px;
   width: 75vw;
-  margin: 2em auto;
+  margin: 2em auto 0 auto;
   padding: 0 20px;
 }
 
@@ -240,6 +240,28 @@ h2 {
   font-weight: 300;
 }
 
+.display-toggle {
+  display: none;
+}
+
+.responsive-header-bar {
+  height: 90px;
+  width: 75vw;
+  margin: 0 auto;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.responsive-header-bar-nav-links {
+  width: 100%;
+}
+
+.responsive-search-bar {
+  width: 100%;
+}
+
 @media screen and (max-width: 1020px) {
   .section-header-hr {
     width: 40%;
@@ -260,6 +282,7 @@ h2 {
     font-size: 1.2rem;
     font-weight: 300;
     color: #666666;
+    background-color: #d1d2d3;
   }
 
   .tab-text-section {
