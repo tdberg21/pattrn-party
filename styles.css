@@ -78,7 +78,9 @@ h2 {
   width: 100%;
   display: none;
   padding: 1rem;
-  border: 1px solid #d1d2d3;
+  border-left: 1px solid #d1d2d3;
+  border-right: 1px solid #d1d2d3;
+  border-bottom: 1px solid #d1d2d3;
 }
 
 .accordion-container input[type=radio] {
@@ -96,6 +98,7 @@ h2 {
 
 .accordion-container input[type=radio] + label {
   background-color: #f2f2f2;
+  border-bottom: 1px solid #d1d2d3;
   font-size: 0.8rem;
   padding: 10px;
 }
@@ -195,14 +198,17 @@ h2 {
   grid-row: 3;
 }
 
+.header-bar-container {
+  width: 85vw;
+  margin: 0 auto;
+}
+
 .header-bar {
   background-color: #d1d2d3;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 90px;
-  width: 75vw;
-  margin: 2em auto;
   padding: 0 20px;
 }
 
@@ -210,6 +216,10 @@ h2 {
   color: #666666;
   text-decoration: none;
   font-weight: 300;
+}
+
+.header-hamburger-button {
+  display: none;
 }
 
 .circle-image-holder {
@@ -231,6 +241,108 @@ h2 {
   background-size: 15px 15px;
   font-size: 0.8rem;
   font-weight: 300;
+}
+
+.display-toggle {
+  display: none;
+}
+
+.responsive-header-bar {
+  margin: 0 auto;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.responsive-header-bar-nav-links {
+  padding: 20px 0 20px 50px;
+  color: #666666;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.responsive-search-bar {
+  width: 80%;
+  height: 30px;
+  margin: 0 auto 10px auto;
+  border: 1px solid #666666;
+  background-color: white;
+  padding-left: 2rem;
+  background-image: url(./magnifying-glass.svg);
+  background-position: 2% 49%;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1020px) {
+  .section-header-hr {
+    width: 40%;
+  }
+
+  .tab-text-section {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .header-bar-nav-links, .search-bar {
+    display: none;
+  }
+
+  .header-hamburger-button {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #666666;
+    background-color: #d1d2d3;
+  }
+
+  .tab-text-section {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .tab {
+    border-top: 1px solid #d1d2d3;
+    flex-wrap: wrap;
+  }
+
+  .tab-images {
+    width: 100%;
+  }
+
+  .tab-text-section {
+    width: 100%;
+  }
+
+  .accordion-container .tab,
+.accordion-container label {
+    order: initial;
+    margin: 0;
+  }
+
+  .accordion-container label {
+    width: 100%;
+    margin-right: 0;
+    border-bottom: 0px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex-grow: 1;
+    width: 50%;
+  }
+
+  .section-header-hr {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

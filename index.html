@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pattern Party</title>
+  <link rel="stylesheet" href="normalize.css" type="text/css">
   <link rel="stylesheet" href="styles.css" type="text/css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 </head>
@@ -22,7 +23,7 @@
     <input type="radio" name="tabs" id="tab1" checked="checked">
     <label for="tab1">Tab 1</label>
     <div class="tab">
-      <img src="./image-holder.png" alt="image-place-holder">
+      <img src="./image-holder.png" alt="image-place-holder" class="tab-images">
       <span class="tab-text-section">
         <h3 class="tab-header">Lorem ipsum dolor sit amet, consectetue</h3>
         <hr class="tab-hr">
@@ -36,7 +37,7 @@
       <input type="radio" name="tabs" id="tab2">
       <label for="tab2">Tab 2 </label>
       <div class="tab">
-        <img src="./image-holder.png" alt="image place holder">
+        <img src="./image-holder.png" alt="image place holder" class="tab-images">
         <span class="tab-text-section">
           <h3 class="tab-header">Tab Two Content</h3>
           <hr class="tab-hr">
@@ -47,7 +48,7 @@
       <input type="radio" name="tabs" id="tab3">
       <label for="tab3">Tab 3 </label>
       <div class="tab">
-        <img src="./image-holder.png" alt="image place holder">
+        <img src="./image-holder.png" alt="image place holder" class="tab-images">
         <span class="tab-text-section">
           <h3 class="tab-header">Tab Three Content</h3>
           <hr class="tab-hr">
@@ -58,7 +59,7 @@
       <input type="radio" name="tabs" id="tab4">
       <label for="tab4">Tab 4 </label>
       <div class="tab">
-        <img src="./image-holder.png" alt="image place holder">
+        <img src="./image-holder.png" alt="image place holder" class="tab-images">
         <span class="tab-text-section">
           <h3 class="tab-header">Tab Four Content</h3>
           <hr class="tab-hr">
@@ -116,8 +117,20 @@
         <a href="google.com" target="_blank" class="header-bar-nav-links">Navigation Link 1</a>
         <a href="google.com" target="_blank" class="header-bar-nav-links">Navigation Link 2</a>
         <a href="google.com" target="_blank" class="header-bar-nav-links">Navigation Link 3</a>
+        <button class="header-hamburger-button">MENU</button>
         <input type="text" placeholder="Search" class="search-bar">
       </div>
+      <span class="display-toggle">
+        <div class="responsive-header-bar">
+          <a href="google.com" target="_blank" class="responsive-header-bar-nav-links">Navigation Link 1</a>
+          <a href="google.com" target="_blank" class="responsive-header-bar-nav-links">Navigation Link 2</a>
+          <a href="google.com" target="_blank" class="responsive-header-bar-nav-links">Navigation Link 3</a>
+          <input type="text" placeholder="Search" class="responsive-search-bar">
+        </div>
+      </span>
+    </div>
+    <div class="code-container">
+      <a class="view-code-button" href="https://codepen.io/tdberg21/pen/yxJNYR" target="_blank">VIEW CODE</a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="scripts.js"></script>
