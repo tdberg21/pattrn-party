@@ -198,14 +198,17 @@ h2 {
   grid-row: 3;
 }
 
+.header-bar-container {
+  width: 85vw;
+  margin: 0 auto;
+}
+
 .header-bar {
   background-color: #d1d2d3;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 90px;
-  width: 75vw;
-  margin: 2em auto 0 auto;
   padding: 0 20px;
 }
 
@@ -245,8 +248,6 @@ h2 {
 }
 
 .responsive-header-bar {
-  height: 90px;
-  width: 75vw;
   margin: 0 auto;
   padding: 0px;
   display: flex;
@@ -255,11 +256,25 @@ h2 {
 }
 
 .responsive-header-bar-nav-links {
-  width: 100%;
+  padding: 20px 0 20px 50px;
+  color: #666666;
+  text-decoration: none;
+  font-weight: 300;
 }
 
 .responsive-search-bar {
-  width: 100%;
+  width: 80%;
+  height: 30px;
+  margin: 0 auto 10px auto;
+  border: 1px solid #666666;
+  background-color: white;
+  padding-left: 2rem;
+  background-image: url(./magnifying-glass.svg);
+  background-position: 2% 49%;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 1020px) {

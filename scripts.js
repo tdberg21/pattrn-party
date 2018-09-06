@@ -1,1 +1,7 @@
-$('.header-hamburger-button').click(() => { $('.display-toggle').slideToggle('slow')})
+$('.header-hamburger-button').click(() => { 
+  if ($('.display-toggle').css('display') === 'none') {
+    $('.display-toggle').css('display', 'inline');
+  } else {
+    $('.display-toggle').css('display', 'none');
+  }
+});
